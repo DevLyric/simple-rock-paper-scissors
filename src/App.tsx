@@ -51,10 +51,12 @@ function App() {
       </div>
       <div className="flex flex-col gap-5 my-8">
         <p>Your points: {points}</p>
-        <p>Machine points: {machinePoints}</p>
+        <div className="flex items-center gap-3">
+          <p>Machine choice: {machineChoice}</p>/
+          <p>Machine points: {machinePoints}</p>
+        </div>
         <p>Draw: {draw}</p>
       </div>
-
       <button
         onClick={() => {
           setPoints(0);
